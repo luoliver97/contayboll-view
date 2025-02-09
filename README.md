@@ -1,50 +1,86 @@
-# Welcome to your Expo app 👋
+# Personal Contayboll App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Este proyecto es una aplicación para el manejo de contabilidad personal, con versiones tanto para móvil (React Native) como para web (React). La aplicación permite registrar ingresos, gastos, presupuestos y administrar cuentas financieras con autenticación de usuario.
 
-## Get started
+## Tecnologías Utilizadas
 
-1. Install dependencies
+- **Frontend Web:** React
+- **Aplicación Móvil:** React Native
+- **Backend:** Python con Flask
+- **Base de Datos:** Mysql
+- **Autenticación:** JWT
 
-   ```bash
+## Características
+
+- Registro y autenticación de usuarios.
+- Registro de ingresos y gastos.
+- Creación y seguimiento de presupuestos.
+- Administración de cuentas financieras.
+- Generación de balances mensuales.
+- Sincronización entre versión web y móvil.
+
+## Instalación y Configuración
+
+### Backend
+
+1. Clonar el repositorio
+2. Instalar dependencias
+   ```sh
+   pip install -r requirements.txt
+   ```
+3. Ejecutar el servidor Flask
+   ```sh
+   flask run
+   ```
+
+### Frontend Web (React)
+
+1. Ir al directorio `web`
+2. Instalar dependencias
+   ```sh
    npm install
    ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
+3. Ejecutar la aplicación
+   ```sh
+   npm start
    ```
 
-In the output, you'll find options to open the app in a
+### Aplicación Móvil (React Native)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+1. Ir al directorio `mobile`
+2. Instalar dependencias
+   ```sh
+   npm install
+   ```
+3. Ejecutar la aplicación en un emulador o dispositivo físico
+   ```sh
+   npx react-native run-android  # Para Android
+   npx react-native run-ios      # Para iOS
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Contribución
 
-## Get a fresh project
+Si deseas contribuir, sigue estos pasos:
 
-When you're ready, run:
+1. Haz un fork del repositorio
+2. Crea una nueva rama
+   ```sh
+   git checkout -b feature-nueva
+   ```
+3. Realiza tus cambios y haz commit
+   ```sh
+   git commit -m "Descripción de los cambios"
+   ```
+4. Sube los cambios
+   ```sh
+   git push origin feature-nueva
+   ```
+5. Abre un Pull Request
 
-```bash
-npm run reset-project
-```
+## Licencia
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 
-## Learn more
+## Contacto
 
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Para más información o soporte, contacta a: [[luismonroy97@live.com](mailto\:luismonroy97@live.com)]
