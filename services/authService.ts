@@ -6,7 +6,7 @@ const API_URL = "http://127.0.0.1:5000/auth";
 export const login = async (username: string, password: string) => {
   try {
     const response = await axios.post(`${API_URL}/login`, { username, password });
-    await Storage.setItem("token", response.data.token);
+    await Storage.setItem("token", response.data.access_token);
     return {
       code: true,
       data: response.data,
